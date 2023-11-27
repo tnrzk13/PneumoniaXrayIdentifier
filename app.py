@@ -15,4 +15,4 @@ path = 'images/'
 examples = [f'{path}Pneumonia 1.jpeg', f'{path}Pneumonia 2.jpeg', f'{path}Pneumonia 3.jpeg', f'{path}No Pneumonia 1.jpeg', f'{path}No Pneumonia 2.jpeg', f'{path}No Pneumonia 3.jpeg']
 
 intf = gr.Interface(fn=classify_image, inputs=image, outputs=label, examples=examples)
-intf.launch(inline=False)
+intf.launch(share=True)
